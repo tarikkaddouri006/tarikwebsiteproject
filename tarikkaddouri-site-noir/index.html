@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarik Kaddouri</title>
+<meta name="description" content="Tarik Kaddouri. Creative-commercial partner. Moroccan, American.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tarikkaddouri.com/">
+<meta property="og:title" content="Tarik Kaddouri">
+<meta property="og:description" content="Creative-commercial partner. Moroccan, American.">
+<meta property="og:image" content="https://tarikkaddouri.com/og-noir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tarik Kaddouri">
+<meta name="twitter:description" content="Creative-commercial partner. Moroccan, American.">
+<meta name="twitter:image" content="https://tarikkaddouri.com/og-noir.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/TKHand-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="site.css">
+<link rel="preconnect" href="https://cdn.syngency.com">
+</head>
+<body>
+
+<main id="stage" aria-live="polite">
+  <div class="frame intro on" id="intro">
+    <div class="floor"><span class="hand">Tarik Kaddouri</span></div>
+  </div>
+</main>
+
+<canvas id="light" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="ui">
+  <button class="name hand" id="home" aria-label="Tarik Kaddouri, back to the start">Tarik Kaddouri<span class="dot"><i></i></span></button>
+  <nav>
+    <a href="#kaddouri" data-win="about">Kaddouri</a>
+    <a href="#glouri" data-world="glouri">Glouri</a>
+    <a href="#stouri" data-world="stouri">STOURI</a>
+    <a href="#nouri" data-world="nouri">Nouri</a>
+    <a href="#explouri" data-world="explouri">Explouri</a>
+    <a href="#ouri" data-world="ouri">Ouri</a>
+    <a href="mailto:tkaddouri@icloud.com">Contact</a>
+  </nav>
+</header>
+
+<button class="adv ui" id="adv" aria-label="Next film"><span class="adv-n" id="advn">01</span><span class="adv-a">→</span></button>
+<button class="adv prev ui" id="prv" aria-label="Previous film"><span class="adv-a">←</span></button>
+<div class="spec ui" id="spec" aria-hidden="true">
+  <i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+  <div class="data" id="specdata"></div>
+</div>
+
+<footer class="ui">
+  <div id="count">00 / 00</div>
+  <button id="snd" class="snd" aria-pressed="false">Sound off</button>
+  <div id="hint"></div>
+  <div id="cap"></div>
+</footer>
+
+<section class="win" id="win-about" role="dialog" aria-label="About" hidden>
+  <div class="bar"><span>TK—000 · Kaddouri</span><span><button class="x" aria-label="Close">×</button></span></div>
+  <div class="body">
+    <div class="ab-role">Creative-commercial partner</div>
+    <p class="ab-line">Moroccan, American.</p>
+    <div class="ab-rule"></div>
+    <p class="credo hand">Go first.<br>Bring everyone.</p>
+    <img class="sig" src="assets/signature.png" alt="TK">
+  </div>
+</section>
+
+<section class="win" id="win-contact" role="dialog" aria-label="Contact" hidden>
+  <div class="bar"><span>TK—∞ · Contact</span><span><button class="x" aria-label="Close">×</button></span></div>
+  <div class="body mono">
+    <div class="row"><span>Direct</span><a href="mailto:tkaddouri@icloud.com">tkaddouri@icloud.com</a></div>
+    <div class="row"><span>Image</span><span>Ouri · <a href="https://theoptionagency.com/divisions/portland-actors/portfolios/tarik-kaddouri" target="_blank" rel="noopener">Option Agency</a></span></div>
+    <div class="row"><span>Work</span><span><a href="https://www.studiolinq.com" target="_blank" rel="noopener">Glouri</a> · <a href="https://www.stouri.co" target="_blank" rel="noopener">stouri.co</a> · <a href="https://nouriwebstore.netlify.app/" target="_blank" rel="noopener">Nouri</a></span></div>
+  </div>
+</section>
+
+
+<section class="win world" id="win-world" role="dialog" aria-label="Work" hidden>
+  <div class="bar"><span id="wno">TK</span><span><button class="x" aria-label="Close">×</button></span></div>
+  <div class="body">
+    <div class="w-stage" id="wstage"></div>
+    <div class="w-meta">
+      <div><div class="w-title hand" id="wtitle"></div><div class="w-line" id="wline"></div></div>
+      <div class="w-right"><div class="w-cap" id="wcap"></div><a class="w-link" id="wlink" target="_blank" rel="noopener"></a></div>
+    </div>
+    <div class="w-thumbs" id="wthumbs"></div>
+  </div>
+</section>
+
+<div id="cursor" aria-hidden="true"><span class="cdot"><i></i></span></div>
+
+<script src="images.js"></script>
+<script src="work.js"></script>
+<script src="site.js"></script>
+<script src="sound.js"></script>
+</body>
+</html>
